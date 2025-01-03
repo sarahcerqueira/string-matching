@@ -17,10 +17,10 @@ class TestStringMatching(unittest.TestCase):
         self.__stringMatchingTest(KnuthMorrisPratt)
 
     def __stringMatchingTest(self, algorithmClass:StringMatchingAlgorithmTemplate):
-        self.__stringMatchingStart(algorithm)
-        self.__stringMatchingEnd(algorithm)
-        self.__stringMatchingMiddle(algorithm)
-        self.__noStringMathcing(algorithm)
+        self.__stringMatchingStart(algorithmClass)
+        self.__stringMatchingEnd(algorithmClass)
+        self.__stringMatchingMiddle(algorithmClass)
+        self.__noStringMathcing(algorithmClass)
 
     def __stringMatchingStart(self, algorithmClass:StringMatchingAlgorithmTemplate):
         self.assertTrue(algorithmClass.hasPattern(self.__TEXTO,"Vestidos de farrapos" ))
